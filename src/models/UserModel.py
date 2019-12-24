@@ -14,7 +14,7 @@ class UserModel(db.Model):
     # table name
     __tablename__ = 'users'
 
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(128), nullable=False)
     email = db.Column(db.String(128), unique=True, nullable=False)
     password = db.Column(db.String(128), nullable=True)
@@ -29,7 +29,7 @@ class UserModel(db.Model):
         """
         self.name = data.get('name')
         self.email = data.get('email')
-        self.password = self.__generate__hash(data.get('password'))
+        self.password = self.__generate_hash(data.get('password'))
         self.created_at = datetime.datetime.utcnow()
         self.modified_at = datetime.datetime.utcnow()
 
@@ -37,7 +37,7 @@ class UserModel(db.Model):
         return bcrypt.generate_password_hash(password, rounds=10).decode("utf-8")
 
     def check_hash(self, password):
-        return bcrypt.check_hash(self.password, password)
+        return bcrypt.check_password_hash(self.password, password)
 
     def save(self):
         db.session.add(self)
@@ -62,6 +62,10 @@ class UserModel(db.Model):
     @staticmethod
     def get_one_user(id):
         return UserModel.query.get(id)
+
+    @staticmethod
+    def get_user_by_email(value):
+        return UserModel.query.filter_by(email=value).first()
 
     def __repr(self):
         return '<id {}>'.format(self.id)
