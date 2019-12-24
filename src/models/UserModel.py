@@ -2,7 +2,7 @@
 from marshmallow import fields, Schema
 import datetime
 from . import db
-from .BlogPostView import BlogpostSchema
+from .BlogPostModel import BlogpostSchema
 from ..app import bcrypt
 
 

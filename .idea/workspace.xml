@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9a7251c-41f4-4dd3-96d1-3f1e8cbdedc0" name="Default Changelist" comment="" />
+    <list default="true" id="c9a7251c-41f4-4dd3-96d1-3f1e8cbdedc0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/BlogPostView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/BlogPostModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/UserModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/UserModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/Authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/Authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/UserView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/UserView.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +18,11 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VGegNsza9DJVRj8Tl0pWt2xqJD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -18,6 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -46,7 +59,7 @@
       <workItem from="1576883979996" duration="12202000" />
       <workItem from="1577051131171" duration="995000" />
       <workItem from="1577052601570" duration="855000" />
-      <workItem from="1577050323539" duration="2318000" />
+      <workItem from="1577050323539" duration="7044000" />
     </task>
     <servers />
   </component>

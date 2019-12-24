@@ -3,7 +3,7 @@ import datetime
 from marshmallow import Schema, fields
 
 
-class BlogPostView(db.Model):
+class BlogPostModel(db.Model):
     """
     Blogpost Model
     """
