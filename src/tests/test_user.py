@@ -86,6 +86,67 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(res.status_code, 400)
         self.assertTrue(json_data.get('error'))
 
+    def test_user_login(self):
+        """
+        Test user login
+        """
+        # Create new user
+        res = self.client().post('api/v1/users/', headers={'Content-Type': 'application/json'}, data=json.dumps(self.user))
+        self.assertEqual(res.status_code, 201)
+
+        # login user
+        res = res = self.client().post('api/v1/users/login', headers={'Content-Type': 'application/json'}, data=json.dumps(self.user))
+        json_data = json.loads(res.data)
+        print(json_data)
+        self.assertEqual(res.status_code, 200)
+        self.assertTrue(json_data.get('Jwt_token'))
+
+    def test_user_login_with_invalid_user(self):
+        """
+        Test login user with invalid password
+        """
+        # Create new user
+        res = self.client().post('api/v1/users/', headers={'Content-Type': 'application/json'},
+                                 data=json.dumps(self.user))
+        self.assertEqual(res.status_code, 201)
+
+        user1 = {
+            'email': "reda@pettywell.com",
+            'password': "testtest"
+        }
+
+        # Log in with invalid password
+        res = self.client().post('api/v1/users/login', headers={'Content-Type': 'application/json'},
+                                 data=json.dumps(user1))
+        json_data = json.loads(res.data)
+
+        self.assertEqual(res.status_code, 400)
+        self.assertTrue(json_data.get('error'))
+
+    def test_user_login_with_invalid_email(self):
+        """
+        Test login user with invalid email
+        """
+        # Create new user
+        res = self.client().post('api/v1/users/',
+                                 headers={'Content-Type': 'application/json'},
+                                 data=json.dumps(self.user))
+
+        self.assertEqual(res.status_code, 201)
+
+        user1 = {
+            'email': "cris@pettywell.com",
+            'password': "password"
+        }
+
+        # Log in with invalid email
+        res = self.client().post('api/v1/users/login', headers={'Content-Type': 'application/json'},
+                                 data=json.dumps(user1))
+        json_data = json.loads(res.data)
+
+        self.assertEqual(res.status_code, 400)
+        self.assertTrue(json_data.get('error'))
+
     def tearDown(self):
         """
         Tear down
