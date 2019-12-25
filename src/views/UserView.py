@@ -14,11 +14,15 @@ def create():
     Create User Function
     """
     req_data = request.get_json()
-    data = user_schema.load(req_data)
+    data = user_schema.load(req_data,  partial=True)
 
     #TODO
     # if error:
     #    return custom_response(error, 400)
+
+    # check if email & password are present
+    if not data.get('email') or not data.get('password') or not data.get('name'):
+        return custom_response({'error': 'you need email, password and name to create '}, 400)
 
     # check if user already exist in the db
     user_in_db = UserModel.get_user_by_email(data.get('email'))
