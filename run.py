@@ -4,8 +4,11 @@ import logging
 
 from src.app import create_app
 
+env_name = os.getenv('FLASK_ENV')
+app = create_app(env_name)
+
 if __name__ == '__main__':
-    env_name = os.getenv('FLASK_ENV')
-    app = create_app(env_name)
+
+    port = os.getenv('PORT')
     # run app
-    app.run()
+    app.run(host='0.0.0.0', port=port)
