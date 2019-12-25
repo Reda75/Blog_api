@@ -164,6 +164,25 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(json_data.get('email'), 'reda@pettywell.com')
         self.assertEqual(json_data.get('name'), 'reda')
 
+    def test_user_update_me(self):
+        """
+        Test user update me
+        """
+        res = self.client().post('api/v1/users/', headers={'Content-Type': 'application/json'},
+                                 data=json.dumps(self.user))
+        self.assertEqual(res.status_code, 201)
+        token_api = json.loads(res.data).get('jwt_token')
+
+        user1 = {
+            'name': "Reda BENLAKEHAL"
+        }
+
+        res = self.client().put('api/v1/users/me', headers={'Content-Type': 'application/json', 'api-token': token_api},
+                                data=json.dumps(user1))
+        json_data = json.loads(res.data)
+        self.assertEqual(res.status_code, 200)
+        self.assertEqual(json_data.get('name'), "Reda BENLAKEHAL")
+
     def tearDown(self):
         """
         Tear down
