@@ -4,8 +4,9 @@
     <list default="true" id="c9a7251c-41f4-4dd3-96d1-3f1e8cbdedc0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/BlogPostModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/BlogPostModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/UserModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/UserModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/UserView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/UserView.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/BlogpostView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BlogpostView.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <workItem from="1577051131171" duration="995000" />
       <workItem from="1577052601570" duration="855000" />
       <workItem from="1577050323539" duration="13936000" />
-      <workItem from="1577193300119" duration="5229000" />
+      <workItem from="1577193300119" duration="13702000" />
     </task>
     <servers />
   </component>
@@ -69,5 +70,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="384" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1577051141776" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1577202423842">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1577202423842" />
   </component>
 </project>

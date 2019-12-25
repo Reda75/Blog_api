@@ -20,8 +20,8 @@ class BlogPostModel(db.Model):
         self.title = data.get('title')
         self.contents = data.get('contents')
         self.owner_id = data.get('owner_id')
-        self.created_at = data.get('created_at')
-        self.modified_at = data.get('modified_at')
+        self.created_at = datetime.datetime.utcnow()
+        self.modified_at = datetime.datetime.utcnow()
 
     def save(self):
         db.session.add(self)
@@ -39,17 +39,17 @@ class BlogPostModel(db.Model):
 
     @staticmethod
     def get_all_blogposts():
-        return BlogpostModel.query.all()
+        return BlogPostModel.query.all()
 
     @staticmethod
     def get_one_blogpost(id):
-        return BlogpostModel.query.get(id)
+        return BlogPostModel.query.get(id)
 
     def __repr__(self):
         return '<id {}>'.format(self.id)
 
 
-class BlogpostSchema(Schema):
+class BlogPostSchema(Schema):
     """
   Blogpost Schema
   """
