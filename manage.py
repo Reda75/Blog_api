@@ -2,8 +2,10 @@ import os
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 
-from src.models import BlogPostModel, UserModel
+
 from src.app import create_app, db
+from src.models.BlogPostModel import BlogPostModel
+from src.models.UserModel import UserModel
 
 env_name = os.getenv('FLASK_ENV')
 app = create_app(env_name)
