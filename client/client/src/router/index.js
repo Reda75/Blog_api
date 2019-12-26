@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import firstComponent from '../components/first-component.vue';
+import signin from '../components/user/signin-user.vue'
 
 Vue.use(VueRouter);
 
@@ -11,6 +12,11 @@ const routes = [
     name: 'firstComponent',
     component: firstComponent,
   },
+  {
+    path: '/signin',
+    name: 'signin',
+    component: signin
+  }
 ];
 
 const router = new VueRouter({

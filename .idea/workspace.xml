@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9a7251c-41f4-4dd3-96d1-3f1e8cbdedc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/client/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/src/components/first-component.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client/src/components/posts/new-post.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client/src/components/posts/posts.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client/src/components/user/login-user.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client/src/components/user/signin-user.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/client/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/UserView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/UserView.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +160,7 @@
       <workItem from="1577052601570" duration="855000" />
       <workItem from="1577050323539" duration="13936000" />
       <workItem from="1577193300119" duration="35751000" />
-      <workItem from="1577367291325" duration="7203000" />
+      <workItem from="1577367291325" duration="20412000" />
     </task>
     <servers />
   </component>

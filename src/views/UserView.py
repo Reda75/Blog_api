@@ -1,11 +1,14 @@
 # /src/views/UserView
-
+import flask_cors
 from flask import request, json, Response, Blueprint, g
+from flask_cors import CORS
+
 from ..models.UserModel import UserModel, UserSchema
 from ..shared.Authentication import Auth
 
 user_api = Blueprint('users', __name__)
 user_schema = UserSchema()
+CORS(user_api)
 
 
 @user_api.route('/', methods=['POST'])
@@ -14,9 +17,9 @@ def create():
     Create User Function
     """
     req_data = request.get_json()
-    data = user_schema.load(req_data,  partial=True)
+    data = user_schema.load(req_data, partial=True)
 
-    #TODO
+    # TODO
     # if error:
     #    return custom_response(error, 400)
 
@@ -48,7 +51,7 @@ def login():
     req_data = request.get_json()
     data = user_schema.load(req_data, partial=True)
 
-    #TODO
+    # TODO
     # if error:
     #    return custom_response(error, 400)
 
@@ -107,7 +110,7 @@ def update():
     req_data = request.get_json()
     data = user_schema.load(req_data, partial=True)
 
-    #TODO
+    # TODO
     # if error:
     #    return custom_response(error, 400)
 
