@@ -74,7 +74,7 @@ def login():
 
 
 @user_api.route('/', methods=['GET'])
-@Auth.auth_required
+#@Auth.auth_required
 def get_all():
     """
     Get all users methods

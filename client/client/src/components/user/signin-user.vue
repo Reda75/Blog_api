@@ -1,24 +1,43 @@
 <template>
-   <form @submit="onSubmit">
-      <div class="form-group">
-        <label for="exampleInputName">Name</label>
-        <input v-model="addUserForm.name" type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input v-model="addUserForm.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  <div>
+    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Sign up</h4>
+            <router-link to="/">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </router-link>
+          </div>
+          <div class="modal-body mx-3">
 
+            <div class="form-group">
+              <i class="fas fa-user"></i>
+              <label for="inputName">Name</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+              <label for="inputEmail">Email</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Eamil">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>   
+
+            <div class="form-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>    
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-info">Sign up</button>
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input v-model="addUserForm.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -40,7 +59,8 @@
             console.log(payload)
             axios.post(path, payload)
             .then((res) => {
-              console.log(res.data)
+              this.$store.dispatch('setToken', res.data)
+              console.log(this.$store.getters.getToken)
             })
             .catch((error) => {
               console.error(error)
