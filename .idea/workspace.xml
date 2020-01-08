@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9a7251c-41f4-4dd3-96d1-3f1e8cbdedc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/client/src/components/footer/footer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/src/components/header/header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/src/components/user/test.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/src/components/user/users.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/src/store/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/client/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client/src/components/user/login-user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/client/src/components/user/login-user.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client/src/components/user/signin-user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/client/src/components/user/signin-user.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/client/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/client/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/UserView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/UserView.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DrivenGo" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
@@ -170,7 +156,10 @@
       <workItem from="1577050323539" duration="13936000" />
       <workItem from="1577193300119" duration="35751000" />
       <workItem from="1577367291325" duration="53981000" />
-      <workItem from="1577970428898" duration="7017000" />
+      <workItem from="1577970428898" duration="8411000" />
+      <workItem from="1578314884237" duration="10799000" />
+      <workItem from="1578339169629" duration="7969000" />
+      <workItem from="1578414286953" duration="10626000" />
     </task>
     <servers />
   </component>
@@ -185,10 +174,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="447" y="168" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1577308039071" />
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1578129307603">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1578432014009">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578129307603" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578432014009" />
     <state width="1323" height="257" key="GridCell.Tab.0.bottom" timestamp="1577367215848">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
